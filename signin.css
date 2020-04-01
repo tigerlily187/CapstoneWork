@@ -1,0 +1,76 @@
+body{
+    background-color: black;
+    color: white;
+}
+.header {
+    padding: 40px;
+    text-align: center;
+    background: white;
+    color: black;
+    font-family: 'Lucida Sans';
+    font-size: 30px;)
+}
+.nav {
+    list-style-type: none;
+    font-size: 25px;
+    padding: 14px 16px;
+    overflow: hidden;
+    float: stretch;
+    color: white;
+    padding: 14px;
+    text-decoration: none;}
+.menuborder {
+    border: 2px solid #ffffff;
+}
+a:link {
+    color: white;
+    text-decoration: none;
+}
+a:visited {
+    color: red;
+    text-decoration: none;
+}
+a:hover {
+    color: white;
+    text-decoration: none;
+}
+a:active {
+    color: white;
+    text-decoration: none;
+}
+body {font-family: Arial, Helvetica, sans-serif;}
+form {border: 3px solid black;}
+input[type=text], input[type=password] {
+    width: 50%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 25%;
+}
+button:hover {
+    opacity: 0.8;
+}
+.cancelbtn {
+    width: auto;
+    padding: 10px 18px;
+    background-color: #f44336;
+}
+.container {
+    padding: 16px;
+    color: white;
+    text color: white;
+}
+span.psw {
+float: right;
+padding-top: 16px;
+}

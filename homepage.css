@@ -12,18 +12,17 @@ body{
     background-image = "https://vykf5g.ch.files.1drv.com/y4mAgtyjSA0XdGVcRFH2Ifx_LF3Baw5JhzLo8eft-o2ceWVhZWqoTfs-6EouFeJpFl2f_LI7HfIOmIMsVONUySNGbM0nrWC6Uqg66WWS2k6pHJ3-PjA5fXbKGMi8rGsvGHGumLZjavhKTq94gqhrKMRZGi0QAVaPMgd7OIHyUatzgV8jnMaJmjKjLuFAojS_LLDcSGrKwMNodv6Z3mEpM9_HA?width=256&height=256&cropmode=none";
     background-position: left;
 }
-.sidenav {
-    height: 50%;
-    width: 300px;
-    position: float;
-    bottom: 50px;
-    z-index: 1;
-    top: 0;
-    left: 0;
-    background-color: black;
-    overflow-x: hidden;
-    padding-top: 50px;
-    font-size: 30px;
+.nav {
+    list-style-type: none;
+    font-size: 25px;
+    padding: 14px 16px;
+    overflow: hidden;
+    float: stretch;
+    color: white;
+    padding: 14px;
+    text-decoration: none;}
+.menuborder {
+    border: 2px solid #ffffff;
 }
 .intro {
     position: absolute;
@@ -31,18 +30,11 @@ body{
     left: 550px;
     z-index: -20;
 }
-.styled {
-    border: 0;
-    line-height: 2.5;
-    padding: 0 20px;
-    display: inline-block;
-    float: right;
-    font-size: 1rem;
-    text-align: center;
-    color:black;
-    text-shadow: 1px 1px 1px #000;
-    border-radius: 10px;
-    background-color: white;
+.buttons {
+    display: block;
+    max-width: 150px;
+    margin: auto;
+    color: black;
 }
 a:link {
     color: white;
@@ -53,7 +45,7 @@ a:visited {
     text-decoration: none;
 }
 a:hover {
-    color: hotpink;
+    color: white;
     text-decoration: none;
 }
 a:active {
