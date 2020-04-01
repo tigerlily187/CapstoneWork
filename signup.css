@@ -11,17 +11,21 @@ body{
     font-size: 30px;)
 }
 .nav {
-    list-style-type: none;
     font-size: 25px;
-    padding: 14px 16px;
-    overflow: hidden;
-    float: stretch;
+    padding: 20px;
     color: white;
-    padding: 14px;
-    text-decoration: none;}
-.menuborder {
-    border: 2px solid #ffffff;
+    text-decoration: none;
+    width: 100%;
+    text-align: center;
 }
+.nav a {
+    padding: 12px;
+    color: white;
+    text-decoration: none;
+    font-size: 25px;
+    width: 50%;
+    text-align: left;
+  }
 a:link {
     color: white;
     text-decoration: none;

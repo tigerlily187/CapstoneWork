@@ -9,26 +9,22 @@ body{
     color: black;
     font-family: 'Lucida Sans';
     font-size: 30px;)
-    background-image = "https://vykf5g.ch.files.1drv.com/y4mAgtyjSA0XdGVcRFH2Ifx_LF3Baw5JhzLo8eft-o2ceWVhZWqoTfs-6EouFeJpFl2f_LI7HfIOmIMsVONUySNGbM0nrWC6Uqg66WWS2k6pHJ3-PjA5fXbKGMi8rGsvGHGumLZjavhKTq94gqhrKMRZGi0QAVaPMgd7OIHyUatzgV8jnMaJmjKjLuFAojS_LLDcSGrKwMNodv6Z3mEpM9_HA?width=256&height=256&cropmode=none";
-    background-position: left;
 }
 .nav {
-    list-style-type: none;
     font-size: 25px;
-    padding: 14px 16px;
-    overflow: hidden;
-    float: stretch;
+    padding: 20px;
     color: white;
-    padding: 14px;
-    text-decoration: none;}
-.menuborder {
-    border: 2px solid #ffffff;
+    text-decoration: none;
+    width: 100%;
+    text-align: center;
 }
-.intro {
-    position: absolute;
-    top: 400px;
-    left: 550px;
-    z-index: -20;
+.nav a {
+    padding: 12px;
+    color: white;
+    text-decoration: none;
+    font-size: 25px;
+    width: 50%;
+    text-align: left;
 }
 .buttons {
     display: block;
@@ -37,7 +33,7 @@ body{
     color: black;
 }
 a:link {
-    color: white;
+    color: black;
     text-decoration: none;
 }
 a:visited {
@@ -45,10 +41,10 @@ a:visited {
     text-decoration: none;
 }
 a:hover {
-    color: white;
+    color: red;
     text-decoration: none;
 }
 a:active {
-    color: white;
+    color: black;
     text-decoration: none;
 }

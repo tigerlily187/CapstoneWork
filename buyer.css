@@ -3,12 +3,12 @@ body{
     color: white;
 }
 .header {
-    padding: 40px;
+    padding: 30px;
     text-align: center;
     background: white;
     color: black;
     font-family: 'Lucida Sans';
-    font-size: 30px;
+    font-size: 30px;)
     background-image = "https://vykf5g.ch.files.1drv.com/y4mAgtyjSA0XdGVcRFH2Ifx_LF3Baw5JhzLo8eft-o2ceWVhZWqoTfs-6EouFeJpFl2f_LI7HfIOmIMsVONUySNGbM0nrWC6Uqg66WWS2k6pHJ3-PjA5fXbKGMi8rGsvGHGumLZjavhKTq94gqhrKMRZGi0QAVaPMgd7OIHyUatzgV8jnMaJmjKjLuFAojS_LLDcSGrKwMNodv6Z3mEpM9_HA?width=256&height=256&cropmode=none";
     background-position: left;
 }
@@ -37,18 +37,10 @@ a:visited {
     text-decoration: none;
 }
 a:hover {
-    color: hotpink;
+    color: white;
     text-decoration: none;
 }
 a:active {
     color: white;
     text-decoration: none;
-}
-.faq_question {
-    font-size: 25px;
-    font-weight: bold;
-}
-.faq_answer {
-    font-size: 20px;
-    font-style: italic;
 }
