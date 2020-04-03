@@ -1,0 +1,53 @@
+body{
+    background-color: black;
+    color: white;
+}
+.header {
+    padding: 40px;
+    text-align: center;
+    background: white;
+    color: black;
+    font-family: 'Lucida Sans';
+    font-size: 30px;)
+}
+.nav {
+    font-size: 25px;
+    padding: 20px;
+    color: white;
+    text-decoration: none;
+    width: 100%;
+    text-align: center;
+}
+.nav a {
+    padding: 12px;
+    color: white;
+    text-decoration: none;
+    font-size: 25px;
+    width: 50%;
+    text-align: left;
+}
+.buttons {
+    display: block;
+    max-width: 150px;
+    margin: auto;
+    color: black;
+}
+a:link {
+    color: black;
+    text-decoration: none;
+}
+a:visited {
+    color: red;
+    text-decoration: none;
+}
+a:hover {
+    color: red;
+    text-decoration: none;
+}
+a:active {
+    color: black;
+    text-decoration: none;
+}
+
+
+/*# sourceMappingURL=/homepage.5756787f.css.map */
