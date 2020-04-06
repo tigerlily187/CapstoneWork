@@ -14,12 +14,12 @@ router.on({
 });
 
 function render(st) {
-    console.log(st);
+  console.log(st);
   document.querySelector(".root").innerHTML = `
     ${Header(st)}
     ${Nav()}
     ${Main(st)}
     `;
-    router.updatePageLinks();
+  router.updatePageLinks();
 }
 render(state.Home);

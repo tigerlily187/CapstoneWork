@@ -1,4 +1,4 @@
-export default ()=>`<div class="nav">
+export default () => `<div class="nav">
   <ul>
   <a href ="/Home" data-navigo>HOMEPAGE</a>
   <a href ="/About" data-navigo>ABOUT US</a>
@@ -8,4 +8,4 @@ export default ()=>`<div class="nav">
   <a href ="/Hashtags" data-navigo>HASHTAGS</a>
   <a href ="/Contact" data-navigo>CONTACT US</a>  
   </ul>
-</div>` 
+</div>`;

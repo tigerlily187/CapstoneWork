@@ -1,4 +1,4 @@
-export default ()=>`<div class="faq_container">
+export default () => `<div class="faq_container">
     <div class="faq">
         <div class="faq_question">Why did you create such a platform?</div>
         <div class="faq_answer">Because this industry has been through enough forceful hoops that it was time that they were able to have a platform as stress-free as possible</div>
@@ -11,4 +11,4 @@ export default ()=>`<div class="faq_container">
         <div class="faq_question">Are you only able to view knives and guns?</div>
         <div class="faq_answer">For right now, yes. This could change in the future</div>					
     </div>
-</div>`
+</div>`;

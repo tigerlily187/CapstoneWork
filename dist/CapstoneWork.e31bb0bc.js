@@ -201,6 +201,30 @@ var _default = {
   page: "Map"
 };
 exports.default = _default;
+},{}],"store/Enter.js":[function(require,module,exports) {
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = void 0;
+var _default = {
+  header: "Welcome Back",
+  page: "Enter"
+};
+exports.default = _default;
+},{}],"store/Create.js":[function(require,module,exports) {
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = void 0;
+var _default = {
+  header: "Welcome to the Family",
+  page: "Create"
+};
+exports.default = _default;
 },{}],"store/index.js":[function(require,module,exports) {
 "use strict";
 
@@ -249,6 +273,18 @@ Object.defineProperty(exports, "Map", {
     return _Map.default;
   }
 });
+Object.defineProperty(exports, "Enter", {
+  enumerable: true,
+  get: function () {
+    return _Enter.default;
+  }
+});
+Object.defineProperty(exports, "Create", {
+  enumerable: true,
+  get: function () {
+    return _Create.default;
+  }
+});
 
 var _Home = _interopRequireDefault(require("./Home"));
 
@@ -264,8 +300,12 @@ var _Hashtags = _interopRequireDefault(require("./Hashtags"));
 
 var _Map = _interopRequireDefault(require("./Map"));
 
+var _Enter = _interopRequireDefault(require("./Enter"));
+
+var _Create = _interopRequireDefault(require("./Create"));
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-},{"./Home":"store/Home.js","./About":"store/About.js","./Faqs":"store/Faqs.js","./Contact":"store/Contact.js","./Costs":"store/Costs.js","./Hashtags":"store/Hashtags.js","./Map":"store/Map.js"}],"components/Header.js":[function(require,module,exports) {
+},{"./Home":"store/Home.js","./About":"store/About.js","./Faqs":"store/Faqs.js","./Contact":"store/Contact.js","./Costs":"store/Costs.js","./Hashtags":"store/Hashtags.js","./Map":"store/Map.js","./Enter":"store/Enter.js","./Create":"store/Create.js"}],"components/Header.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -300,7 +340,7 @@ Object.defineProperty(exports, "__esModule", {
 exports.default = void 0;
 
 var _default = function _default() {
-  return "<div class=\"buttons\">\n    <button class=\"signup\" type=\"button\"><center><a href =\"signup.html\">SIGN UP</a></center></button>\n    <button class=\"login\" type=\"button\"><center><a href =\"signin.html\">LOGIN</center></button></a>\n  </div>";
+  return "<div class=\"Membership\">\n    <button><center><a href =\"/Enter\" data-navigo>Sign In</a></button>\n    <button><center><a href =\"/Create\" data-navigo>Create Your Account</a></button>\n  </div>";
 };
 
 exports.default = _default;
@@ -339,7 +379,7 @@ Object.defineProperty(exports, "__esModule", {
 exports.default = void 0;
 
 var _default = function _default() {
-  return "<h2><center>Please feel free to reach out with any questions and/or concerns through the following formats</center></h2>\n    <table style=\"width:50%\">\n        <tr>\n        <th>Fillout and submit this form</th>\n        <th></th>\n        <th>Email</th>\n        </tr>\n        <tr>\n        <td><form action=\"https://formspree.io/mdodqbdd\" method=\"POST\">\n            <label>Your Name:<input type=\"text\" name=\"_replyto\"></label><br>\n            <label>Your email:<input type=\"text\" name=\"_replyto\"></label><br>\n            <label>Your message:<textarea name=\"message\"></textarea></label><br>\n            <button type=\"submit\">Send</button>\n            </form></td>\n        <td></td>\n        <td>info@allinone.com</td>\n        </tr>\n        <tr>\n        <th>Address and Phone Number</th>\n        <th></th>\n        <th>Social Media</th>\n        </tr>\n        <tr>\n        <td>555 W Hollywood Dr<br>Granite City, SD 54857<br>555-667-1234</td>\n        <td></td>\n        <td><a href=\"#\" class=\"fa fa-facebook\"></a>\n            <a href=\"#\" class=\"fa fa-twitter\"></a>\n            <a href=\"#\" class=\"fa fa-linkedin\"></a>\n            <a href=\"#\" class=\"fa fa-instagram\"></a>\n            <a href=\"#\" class=\"fa fa-skype\"></a></td>\n        </tr>\n    </table>";
+  return "<h2><center>Please feel free to reach out with any questions and/or concerns through the following formats</center></h2>\n    <div class=\"contact\">\n        <h3>Fill out and submit this form</h3><br>\n            <form action=\"https://formspree.io/mdodqbdd\" method=\"POST\">\n                <label>Name:<input type=\"text\" name=\"_replyto\"></label><br>\n                <label>Email:<input type=\"text\" name=\"_replyto\"></label><br>\n                <label>Message:<textarea name=\"message\"></textarea></label><br>\n                <button type=\"submit\">Send</button>\n                </form><br>\n        <h3>EMAIL:</h3><br>\n            <h4>info@allinone.com</h4><br>\n        <h3>Address & Phone Number</h3><br>\n            <h4>555 W Hollywood Dr<br>Granite City, SD 54857<br>555-667-1234</h4><br>\n        <h3>Social Media</h3><br>\n    </div>";
 };
 
 exports.default = _default;
@@ -352,7 +392,7 @@ Object.defineProperty(exports, "__esModule", {
 exports.default = void 0;
 
 var _default = function _default() {
-  return "<div class=\"explanation\">\n        <ul>\n            <li>Vendors and Buyers will NOT be charged a membership fee</li>\n            <li>For Vendors: All in One will take 5% off of every sale.</li>\n            <li>Buyers will not be charged any fees</li>\n            <li>Advertising with All In One will be charged depending on packet chosen by Vendor here.</li>\n        </ul>\n    </div>";
+  return "<div class=\"explanation\">\n        <ul>\n            <li>Vendors and Buyers will NOT be charged a membership fee</li>\n            <li>For Vendors: All in One will take 5% off of every sale</li>\n            <li>Buyers will not be charged any premiums</li>\n            <li>Vendors & Buyers will be responsible to adhere to their state/local firearm laws</li>\n            <li>All gun purchases will need to go through an FLL</li>\n            <li>Advertising with All In One will be charged depending on packet chosen by Vendor here</li>\n        </ul>\n    </div>";
 };
 
 exports.default = _default;
@@ -370,7 +410,44 @@ var _default = function _default() {
 
 exports.default = _default;
 },{}],"components/views/Map.js":[function(require,module,exports) {
+"use strict";
 
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = void 0;
+
+var _default = function _default() {
+  return "<img src=\"components/Sample.jpg>";
+};
+
+exports.default = _default;
+},{}],"components/views/Enter.js":[function(require,module,exports) {
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = void 0;
+
+var _default = function _default() {
+  return "<form action=\"/action_page.php\" method=\"post\">\n        <div class=\"container\">\n            <label for=\"uname\"><b>Username</b></label>\n            <input type=\"text\" placeholder=\"Enter Username\" name=\"uname\" required><br>\n            <label for=\"psw\"><b>Password</b></label>\n            <input type=\"password\" placeholder=\"Enter Password\" name=\"psw\" required><br>\n            <button type=\"submit\">Login</button><br>\n            <label>\n            <input type=\"checkbox\" checked=\"checked\" name=\"remember\"> Remember me\n            </label><br>\n        </div>\n        <div class=\"container\">\n            <button type=\"button\" class=\"cancelbtn\"><a href=\"homepage.html\">Cancel</button></a>\n            <span class=\"psw\"><a href=\"#\">Forgot password?</a></span>\n        </div>\n    </form>";
+};
+
+exports.default = _default;
+},{}],"components/views/Create.js":[function(require,module,exports) {
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = void 0;
+
+var _default = function _default() {
+  return "<div class=\"container\">\n<h1>Sign Up</h1>\n<p>Please fill in this form to create an account.</p>\n<hr>\n<label>\n    <input type=\"checkbox\" checked=\"checked\" name=\"remember\" style=\"margin-bottom:15px\">I Want to Sell\n    </label>\n<label>\n    <input type=\"checkbox\" checked=\"checked\" name=\"remember\" style=\"margin-bottom:15px\">I Want To Buy\n    </label><br>\n<label for=\"FName\"><b>First Name</b></label>\n<input type=\"text\" placeholder=\"Enter First Name\" name=\"First Name\" required><br>\n<label for=\"LName\"><b>Last Name</b></label>\n<input type=\"text\" placeholder=\"Enter Last Name\" name=\"Last name\" required><br>\n<label for=\"email\"><b>Email</b></label>\n<input type=\"text\" placeholder=\"Enter Email\" name=\"email\" required><br>\n<label for=\"psw\"><b>Password</b></label>\n<input type=\"password\" placeholder=\"Enter Password\" name=\"psw\" required><br>\n<label for=\"psw-repeat\"><b>Repeat Password</b></label>\n<input type=\"password\" placeholder=\"Repeat Password\" name=\"psw-repeat\" required><br>\n<label>\n<input type=\"checkbox\" checked=\"checked\" name=\"remember\" style=\"margin-bottom:15px\"> Remember me\n</label>\n<p>By creating an account you agree to our <a href=\"#\" style=\"color:dodgerblue\">Terms & Privacy</a>.</p>\n<div class=\"clearfix\">\n  <button type=\"button\" class=\"cancelbtn\"><a href =\"homepage.html\">Cancel</a></button>\n  <button type=\"submit\" class=\"signupbtn\">Sign Up</button>\n</div>\n</div>\n</form>";
+};
+
+exports.default = _default;
 },{}],"components/views/index.js":[function(require,module,exports) {
 "use strict";
 
@@ -419,6 +496,18 @@ Object.defineProperty(exports, "Map", {
     return _Map.default;
   }
 });
+Object.defineProperty(exports, "Enter", {
+  enumerable: true,
+  get: function () {
+    return _Enter.default;
+  }
+});
+Object.defineProperty(exports, "Create", {
+  enumerable: true,
+  get: function () {
+    return _Create.default;
+  }
+});
 
 var _Home = _interopRequireDefault(require("./Home"));
 
@@ -434,8 +523,12 @@ var _Hashtags = _interopRequireDefault(require("./Hashtags"));
 
 var _Map = _interopRequireDefault(require("./Map"));
 
+var _Enter = _interopRequireDefault(require("./Enter"));
+
+var _Create = _interopRequireDefault(require("./Create"));
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-},{"./Home":"components/views/Home.js","./About":"components/views/About.js","./Faqs":"components/views/Faqs.js","./Contact":"components/views/Contact.js","./Costs":"components/views/Costs.js","./Hashtags":"components/views/Hashtags.js","./Map":"components/views/Map.js"}],"components/Main.js":[function(require,module,exports) {
+},{"./Home":"components/views/Home.js","./About":"components/views/About.js","./Faqs":"components/views/Faqs.js","./Contact":"components/views/Contact.js","./Costs":"components/views/Costs.js","./Hashtags":"components/views/Hashtags.js","./Map":"components/views/Map.js","./Enter":"components/views/Enter.js","./Create":"components/views/Create.js"}],"components/Main.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -19712,7 +19805,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "64007" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "60394" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
