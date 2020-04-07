@@ -68,7 +68,20 @@ table, th, td {
 }
 .contact{
     display: flex;
-    flex-direction: column;
-    align-content: flex-start;
     justify-content: space-between;
+    align-self: center;
+}
+.contact div{
+    justify-self: center;
+}
+.picture{
+    display: flex;
+    justify-content: center;
+}
+.hidden{
+    display: none;
+}
+.faq_container{
+    display: flex;
+    justify-content: center;
 }

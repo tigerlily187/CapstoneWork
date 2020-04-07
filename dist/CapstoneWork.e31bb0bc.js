@@ -366,7 +366,7 @@ Object.defineProperty(exports, "__esModule", {
 exports.default = void 0;
 
 var _default = function _default() {
-  return "<div class=\"faq_container\">\n    <div class=\"faq\">\n        <div class=\"faq_question\">Why did you create such a platform?</div>\n        <div class=\"faq_answer\">Because this industry has been through enough forceful hoops that it was time that they were able to have a platform as stress-free as possible</div>\n        <div class=\"faq_question\">What does one need to sign up?</div>\n        <div class=\"faq_answer\">You will need an email and an account on the banking app we use.</div>\n        <div class=\"faq_question\">When I sign up, do I have to sell or buy things?</div>\n        <div class=\"faq_answer\">No, it is not mandatory to do either</div>\n        <div class=\"faq_question\">Why do you require one banking app?</div>\n        <div class=\"faq_answer\">To make it easier for not only us but vendor and buyer</div>\n        <div class=\"faq_question\">Are you only able to view knives and guns?</div>\n        <div class=\"faq_answer\">For right now, yes. This could change in the future</div>\t\t\t\t\t\n    </div>\n</div>";
+  return "<div class=\"faq_container\">\n    <div class=\"faq\">\n        <div class=\"faq_question\" id=\"q1\">Why did you create such a platform? +</div>\n        <div class=\"faq_answer hidden\" id=\"a1\">Because this industry has been through enough forceful hoops that it was time that they were able to have a platform as stress-free as possible</div>\n        <div class=\"faq_question\" id=\"q2\">What does one need to sign up? +</div>\n        <div class=\"faq_answer hidden\" id=\"a2\">You will need an email and an account on the banking app we use.</div>\n        <div class=\"faq_question\" id=\"q3\">When I sign up, do I have to sell or buy things? +</div>\n        <div class=\"faq_answer hidden\" id=\"a3\">No, it is not mandatory to do either</div>\n        <div class=\"faq_question\" id=\"q4\">Why do you require one banking app? +</div>\n        <div class=\"faq_answer hidden\" id=\"a4\">To make it easier for not only us but vendor and buyer</div>\n        <div class=\"faq_question\" id=\"q5\">Are you only able to view knives and guns? +</div>\n        <div class=\"faq_answer hidden\" id=\"a5\">For right now, yes. This could change in the future</div>\t\t\t\t\t\n    </div>\n</div>";
 };
 
 exports.default = _default;
@@ -379,7 +379,7 @@ Object.defineProperty(exports, "__esModule", {
 exports.default = void 0;
 
 var _default = function _default() {
-  return "<h2><center>Please feel free to reach out with any questions and/or concerns through the following formats</center></h2>\n    <div class=\"contact\">\n        <h3>Fill out and submit this form</h3><br>\n            <form action=\"https://formspree.io/mdodqbdd\" method=\"POST\">\n                <label>Name:<input type=\"text\" name=\"_replyto\"></label><br>\n                <label>Email:<input type=\"text\" name=\"_replyto\"></label><br>\n                <label>Message:<textarea name=\"message\"></textarea></label><br>\n                <button type=\"submit\">Send</button>\n                </form><br>\n        <h3>EMAIL:</h3><br>\n            <h4>info@allinone.com</h4><br>\n        <h3>Address & Phone Number</h3><br>\n            <h4>555 W Hollywood Dr<br>Granite City, SD 54857<br>555-667-1234</h4><br>\n        <h3>Social Media</h3><br>\n    </div>";
+  return "<h2><center>Please feel free to reach out with any questions and/or concerns through the following formats</center></h2>\n    <div class=\"contact\">\n        <div><h3>Fill out and submit this form</h3><br>\n            <form action=\"https://formspree.io/mdodqbdd\" method=\"POST\">\n                <label>Name:<input type=\"text\" name=\"_replyto\"></label><br>\n                <label>Email:<input type=\"text\" name=\"_replyto\"></label><br>\n                <label>Message:<textarea name=\"message\"></textarea></label><br>\n                <button type=\"submit\">Send</button>\n                </form><br></div>\n        <div><h3>EMAIL:</h3><br>\n            <h4>info@allinone.com</h4><br></div>\n        <div><h3>Address & Phone Number</h3><br>\n            <h4>555 W Hollywood Dr<br>Granite City, SD 54857<br>555-667-1234</h4><br></div>\n        <div><h3>Social Media</h3><br></div>\n    </div>";
 };
 
 exports.default = _default;
@@ -418,7 +418,7 @@ Object.defineProperty(exports, "__esModule", {
 exports.default = void 0;
 
 var _default = function _default() {
-  return "<img src=\"components/Sample.jpg>";
+  return "<div class=\"picture\"><img src=\"https://github.com/tigerlily187/CapstoneWork/blob/master/components/Sample.jpg?raw=true\"></div>";
 };
 
 exports.default = _default;
@@ -19773,10 +19773,24 @@ router.on({
 function render(st) {
   console.log(st);
   document.querySelector(".root").innerHTML = "\n    ".concat((0, _components.Header)(st), "\n    ").concat((0, _components.Nav)(), "\n    ").concat((0, _components.Main)(st), "\n    ");
+  addFaqEventListener(st);
   router.updatePageLinks();
 }
 
 render(state.Home);
+
+function addFaqEventListener(st) {
+  if (st.page === "Faqs") {
+    document.querySelectorAll(".faq_question").forEach(function (question) {
+      return question.addEventListener("click", function (event) {
+        var id = event.target.id.slice(1);
+        console.log(id);
+        document.querySelector("#a".concat(id)).classList.toggle("hidden");
+      });
+    });
+    console.log(document.querySelectorAll(".faq_question"));
+  }
+}
 },{"./store":"store/index.js","./components":"components/index.js","navigo":"node_modules/navigo/lib/navigo.min.js","lodash":"node_modules/lodash/lodash.js"}],"node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
@@ -19805,7 +19819,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "60394" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "58471" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
