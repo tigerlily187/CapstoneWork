@@ -1,4 +1,4 @@
-export default () => `<div class="nav">
+export default () =>`<div class="nav">
   <ul>
   <a href ="/Home" data-navigo>HOMEPAGE</a>
   <a href ="/About" data-navigo>ABOUT US</a>
