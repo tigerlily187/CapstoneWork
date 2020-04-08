@@ -6,4 +6,5 @@ export default () =>
             This is where we come in....with a touch of all the social media platforms combined you can come in, take a look around, look a reviews and even purchase items you want.
             Just abide by the rules set and your transaction should be simple and stress-free.</p>
         </div>
-</div>`
+</div>
+<center><img src="https://github.com/tigerlily187/CapstoneWork/blob/master/library/2ndAmendment.jpg?raw=true"></center>`
