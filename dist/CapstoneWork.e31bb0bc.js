@@ -165,7 +165,7 @@ var _default = {
   page: "Contact"
 };
 exports.default = _default;
-},{}],"store/Costs.js":[function(require,module,exports) {
+},{}],"store/Breakdown.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -173,8 +173,8 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports.default = void 0;
 var _default = {
-  header: "Costs",
-  page: "Costs"
+  header: "The Breakdown",
+  page: "Breakdown"
 };
 exports.default = _default;
 },{}],"store/Hashtags.js":[function(require,module,exports) {
@@ -255,10 +255,10 @@ Object.defineProperty(exports, "Contact", {
     return _Contact.default;
   }
 });
-Object.defineProperty(exports, "Costs", {
+Object.defineProperty(exports, "Breakdown", {
   enumerable: true,
   get: function () {
-    return _Costs.default;
+    return _Breakdown.default;
   }
 });
 Object.defineProperty(exports, "Hashtags", {
@@ -294,7 +294,7 @@ var _Faqs = _interopRequireDefault(require("./Faqs"));
 
 var _Contact = _interopRequireDefault(require("./Contact"));
 
-var _Costs = _interopRequireDefault(require("./Costs"));
+var _Breakdown = _interopRequireDefault(require("./Breakdown"));
 
 var _Hashtags = _interopRequireDefault(require("./Hashtags"));
 
@@ -305,7 +305,7 @@ var _Enter = _interopRequireDefault(require("./Enter"));
 var _Create = _interopRequireDefault(require("./Create"));
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-},{"./Home":"store/Home.js","./About":"store/About.js","./Faqs":"store/Faqs.js","./Contact":"store/Contact.js","./Costs":"store/Costs.js","./Hashtags":"store/Hashtags.js","./Map":"store/Map.js","./Enter":"store/Enter.js","./Create":"store/Create.js"}],"components/Header.js":[function(require,module,exports) {
+},{"./Home":"store/Home.js","./About":"store/About.js","./Faqs":"store/Faqs.js","./Contact":"store/Contact.js","./Breakdown":"store/Breakdown.js","./Hashtags":"store/Hashtags.js","./Map":"store/Map.js","./Enter":"store/Enter.js","./Create":"store/Create.js"}],"components/Header.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -327,7 +327,7 @@ Object.defineProperty(exports, "__esModule", {
 exports.default = void 0;
 
 var _default = function _default() {
-  return "<div class=\"nav\">\n  <ul>\n  <a href =\"/Home\" data-navigo>HOMEPAGE</a>\n  <a href =\"/About\" data-navigo>ABOUT US</a>\n  <a href =\"/Faqs\" data-navigo>FAQs</a>\n  <a href =\"/Map\" data-navigo>MAP</a>\n  <a href =\"/Costs\" data-navigo>COSTS</a>\n  <a href =\"/Hashtags\" data-navigo>HASHTAGS</a>\n  <a href =\"/Contact\" data-navigo>CONTACT US</a>  \n  </ul>\n</div>";
+  return "<div class=\"nav\">\n  <ul>\n  <a href =\"/Home\" data-navigo>HOMEPAGE</a>\n  <a href =\"/About\" data-navigo>ABOUT US</a>\n  <a href =\"/Map\" data-navigo>MAP</a>\n  <a href =\"/Breakdown\" data-navigo>BREAKDOWN</a>\n  <a href =\"/Faqs\" data-navigo>FAQs</a>\n  <a href =\"/Contact\" data-navigo>CONTACT US</a>  \n  </ul>\n</div>";
 };
 
 exports.default = _default;
@@ -340,7 +340,7 @@ Object.defineProperty(exports, "__esModule", {
 exports.default = void 0;
 
 var _default = function _default() {
-  return "<div class=\"Membership\">\n    <button><center><a href =\"/Enter\" data-navigo>Sign In</a></button>\n    <button><center><a href =\"/Create\" data-navigo>Create Your Account</a></button>\n  </div>";
+  return "<div class=\"Membership\">\n      <button><center><a href =\"/Enter\" data-navigo>Sign In</a></button><button><center><a href =\"/Create\" data-navigo>Create Your Account</a></button>\n  </div>\n      <center><img src=\"https://github.com/tigerlily187/CapstoneWork/blob/master/components/logo.png?raw=true\"></center>";
 };
 
 exports.default = _default;
@@ -353,7 +353,7 @@ Object.defineProperty(exports, "__esModule", {
 exports.default = void 0;
 
 var _default = function _default() {
-  return "<h3>WHO WE ARE</h3>\n<p>Those of us in the gun and knife industry, whether consumer or vendor, know that it is getting pretty ridiculus to view product and sell/buy what we want.\nWith all the red tape that the gun and knife industry has had to go through, there isn't a stress-free platform for products to be reviewed and purchased. \nThis is where we come in....with a touch of all the social media platforms combined you can come in, take a look around, look a reviews and even purchase items you want.\nJust abide by the rules set and your transaction should be simple and stress-free.</p>";
+  return "<div class=\"about\">       \n    <div class=\"box\"> \n        <p>Those of us in the gun and knife industry, whether consumer or vendor, know that it is getting pretty ridiculus to view product and sell/buy what we want.\n            With all the red tape that the gun and knife industry has had to go through, there isn't a stress-free platform for products to be reviewed and purchased. \n            This is where we come in....with a touch of all the social media platforms combined you can come in, take a look around, look a reviews and even purchase items you want.\n            Just abide by the rules set and your transaction should be simple and stress-free.</p>\n        </div>\n</div>";
 };
 
 exports.default = _default;
@@ -366,7 +366,7 @@ Object.defineProperty(exports, "__esModule", {
 exports.default = void 0;
 
 var _default = function _default() {
-  return "<div class=\"faq_container\">\n    <div class=\"faq\">\n        <div class=\"faq_question\" id=\"q1\">Why did you create such a platform? +</div>\n        <div class=\"faq_answer hidden\" id=\"a1\">Because this industry has been through enough forceful hoops that it was time that they were able to have a platform as stress-free as possible</div>\n        <div class=\"faq_question\" id=\"q2\">What does one need to sign up? +</div>\n        <div class=\"faq_answer hidden\" id=\"a2\">You will need an email and an account on the banking app we use.</div>\n        <div class=\"faq_question\" id=\"q3\">When I sign up, do I have to sell or buy things? +</div>\n        <div class=\"faq_answer hidden\" id=\"a3\">No, it is not mandatory to do either</div>\n        <div class=\"faq_question\" id=\"q4\">Why do you require one banking app? +</div>\n        <div class=\"faq_answer hidden\" id=\"a4\">To make it easier for not only us but vendor and buyer</div>\n        <div class=\"faq_question\" id=\"q5\">Are you only able to view knives and guns? +</div>\n        <div class=\"faq_answer hidden\" id=\"a5\">For right now, yes. This could change in the future</div>\t\t\t\t\t\n    </div>\n</div>";
+  return "<div class=\"faq_container\">\n    <div class=\"faq\">\n        <div class=\"faq_question\" id=\"q1\">+ Why did you create such a platform?</div>\n        <div class=\"faq_answer hidden\" id=\"a1\">Because this industry has been through enough forceful hoops that it was time that they were able to have a platform as stress-free as possible</div>\n        <div class=\"faq_question\" id=\"q2\">+ What does one need to sign up?</div>\n        <div class=\"faq_answer hidden\" id=\"a2\">You will need an email and an account on the banking app we use.</div>\n        <div class=\"faq_question\" id=\"q3\">+ When I sign up, do I have to sell or buy things?</div>\n        <div class=\"faq_answer hidden\" id=\"a3\">No, it is not mandatory to do either</div>\n        <div class=\"faq_question\" id=\"q4\">+ Why do you require one banking app?</div>\n        <div class=\"faq_answer hidden\" id=\"a4\">To make it easier for not only us but vendor and buyer</div>\n        <div class=\"faq_question\" id=\"q5\">+ Are you only able to view knives and guns?</div>\n        <div class=\"faq_answer hidden\" id=\"a5\">For right now, yes. This could change in the future</div>\t\t\t\t\t\n    </div>\n</div>";
 };
 
 exports.default = _default;
@@ -383,7 +383,7 @@ var _default = function _default() {
 };
 
 exports.default = _default;
-},{}],"components/views/Costs.js":[function(require,module,exports) {
+},{}],"components/views/Breakdown.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -392,7 +392,7 @@ Object.defineProperty(exports, "__esModule", {
 exports.default = void 0;
 
 var _default = function _default() {
-  return "<div class=\"explanation\">\n        <ul>\n            <li>Vendors and Buyers will NOT be charged a membership fee</li>\n            <li>For Vendors: All in One will take 5% off of every sale</li>\n            <li>Buyers will not be charged any premiums</li>\n            <li>Vendors & Buyers will be responsible to adhere to their state/local firearm laws</li>\n            <li>All gun purchases will need to go through an FLL</li>\n            <li>Advertising with All In One will be charged depending on packet chosen by Vendor here</li>\n        </ul>\n    </div>";
+  return "\n<center><h2>Everything you need to know...and then some</center></h2>\n<div class=\"explanation\">\n        <ul>\n            <li>Vendors and Buyers will NOT be charged a membership fee</li>\n            <li>For Vendors: All in One will take 5% off of every sale</li>\n            <li>Buyers will not be charged any premiums</li>\n            <li>All members intending to sell or buy will need an account with our bank app</li>\n            <li>Vendors & Buyers will be responsible to adhere to their state/local firearm laws</li>\n            <li>Venders will insure proper communication with consumer</li>\n            <li>Venders will take sole responsibility for insuring their product(s)</li>\n            <li>All gun purchases will need to go through a FLL</li>\n            <li>All In One (AIO) does not take responsibility for any lost packages</li>\n            <li>Members can escalate any issues to AIO if it cannot be resolved between the parties involved</li>\n            <li>Advertising with All In One will be charged depending on packet chosen by Vendor here</li>\n        </ul>\n</div>";
 };
 
 exports.default = _default;
@@ -478,10 +478,10 @@ Object.defineProperty(exports, "Contact", {
     return _Contact.default;
   }
 });
-Object.defineProperty(exports, "Costs", {
+Object.defineProperty(exports, "Breakdown", {
   enumerable: true,
   get: function () {
-    return _Costs.default;
+    return _Breakdown.default;
   }
 });
 Object.defineProperty(exports, "Hashtags", {
@@ -517,7 +517,7 @@ var _Faqs = _interopRequireDefault(require("./Faqs"));
 
 var _Contact = _interopRequireDefault(require("./Contact"));
 
-var _Costs = _interopRequireDefault(require("./Costs"));
+var _Breakdown = _interopRequireDefault(require("./Breakdown"));
 
 var _Hashtags = _interopRequireDefault(require("./Hashtags"));
 
@@ -528,7 +528,7 @@ var _Enter = _interopRequireDefault(require("./Enter"));
 var _Create = _interopRequireDefault(require("./Create"));
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-},{"./Home":"components/views/Home.js","./About":"components/views/About.js","./Faqs":"components/views/Faqs.js","./Contact":"components/views/Contact.js","./Costs":"components/views/Costs.js","./Hashtags":"components/views/Hashtags.js","./Map":"components/views/Map.js","./Enter":"components/views/Enter.js","./Create":"components/views/Create.js"}],"components/Main.js":[function(require,module,exports) {
+},{"./Home":"components/views/Home.js","./About":"components/views/About.js","./Faqs":"components/views/Faqs.js","./Contact":"components/views/Contact.js","./Breakdown":"components/views/Breakdown.js","./Hashtags":"components/views/Hashtags.js","./Map":"components/views/Map.js","./Enter":"components/views/Enter.js","./Create":"components/views/Create.js"}],"components/Main.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -19819,7 +19819,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "58471" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "55299" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
