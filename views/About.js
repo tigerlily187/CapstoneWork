@@ -1,4 +1,4 @@
-export default () => 
+export default () =>
 `<div class="about">       
     <div class="box"> 
         <p>Those of us in the gun and knife industry, whether consumer or vendor, know that it is getting pretty ridiculus to view product and sell/buy what we want.
