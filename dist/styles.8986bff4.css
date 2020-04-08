@@ -70,6 +70,7 @@ table, th, td {
     display: flex;
     justify-content: space-evenly;
     align-self: center;
+    font-size: 20px;
 }
 .picture{
     display: flex;

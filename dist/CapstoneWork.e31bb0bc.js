@@ -191,7 +191,7 @@ Object.defineProperty(exports, "__esModule", {
 exports.default = void 0;
 
 var _default = function _default() {
-  return "<h2><center>Please feel free to reach out with any questions and/or concerns through the following formats</center></h2>\n    <div class=\"contact\">\n        <div class=\"alternate\">\n            <h3>Fill out and submit this form</h3><br>\n            <form action=\"https://formspree.io/mdodqbdd\" method=\"POST\">\n                <label>Name:<input type=\"text\" name=\"_replyto\"></label><br>\n                <label>Email:<input type=\"text\" name=\"_replyto\"></label><br>\n                <label>Message:<textarea name=\"message\"></textarea></label><br>\n                <button type=\"submit\">Send</button>\n                </form><br>\n        </div>\n        <div class=\"alternate\">\n            <div><h3>EMAIL:</h3><br>\n                <h4>info@allinone.com</h4><br></div>\n        </div>\n        <div><h3>Address & Phone Number</h3><br>\n            <h4>555 W Hollywood Dr<br>Granite City, SD 54857<br>555-667-1234</h4><br></div>\n    </div>";
+  return "<h2><center>Please feel free to reach out with any questions and/or concerns through the following formats</center></h2>\n    <div class=\"contact\">\n            <h3>Fill out and submit this form</h3><br>\n            <form action=\"https://formspree.io/mdodqbdd\" method=\"POST\">\n                <label>Name:<input type=\"text\" name=\"_replyto\"></label><br>\n                <label>Email:<input type=\"text\" name=\"_replyto\"></label><br>\n                <label>Message:<textarea name=\"message\"></textarea></label><br>\n                <button type=\"submit\">Send</button>\n                </form><br>\n            <h3>EMAIL:</h3><br>\n                <h4>info@allinone.com</h4><br>\n            <h3>Address & Phone Number</h3><br>\n            <h4>555 W Hollywood Dr<br>Granite City, SD 54857<br>555-667-1234</h4><br>\n    </div>";
 };
 
 exports.default = _default;
@@ -243,7 +243,7 @@ Object.defineProperty(exports, "__esModule", {
 exports.default = void 0;
 
 var _default = function _default() {
-  return "<form action=\"/action_page.php\" method=\"post\">\n        <div class=\"container\">\n            <label for=\"uname\"><b>Username</b></label>\n            <input type=\"text\" placeholder=\"Enter Username\" name=\"uname\" required><br>\n            <label for=\"psw\"><b>Password</b></label>\n            <input type=\"password\" placeholder=\"Enter Password\" name=\"psw\" required><br>\n            <button type=\"submit\">Login</button><br>\n            <label>\n            <input type=\"checkbox\" checked=\"checked\" name=\"remember\"> Remember me\n            </label><br>\n        </div>\n        <div class=\"container\">\n            <button type=\"button\" class=\"cancelbtn\"><a href=\"homepage.html\">Cancel</button></a>\n            <span class=\"psw\"><a href=\"#\">Forgot password?</a></span>\n        </div>\n    </form>";
+  return "<form action=\"/action_page.php\" method=\"post\">\n        <div class=\"container\">\n            <label for=\"uname\"><b>Username</b></label>\n            <input type=\"text\" placeholder=\"Enter Username\" name=\"uname\" required><br>\n            <label for=\"psw\"><b>Password</b></label>\n            <input type=\"password\" placeholder=\"Enter Password\" name=\"psw\" required><br>\n            <button type=\"submit\">Login</button><br>\n            <label>\n            <input type=\"checkbox\" checked=\"checked\" name=\"remember\"> Remember me\n            </label><br>\n        </div>\n        <div class=\"container\">\n            <button type=\"button\" class=\"cancelbtn\"><a href=\"homepage.html\">Cancel</button></a>\n            <span class=\"psw\"><a href=\"#\">Forgot password?</a></span>\n        <img src=\"https://github.com/tigerlily187/CapstoneWork/blob/master/library/buygunmeme.png?raw=true></div>\n    </form>";
 };
 
 exports.default = _default;
@@ -19819,7 +19819,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "61244" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "61563" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
