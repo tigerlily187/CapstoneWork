@@ -21,7 +21,7 @@ export default () => `<div class="container">
 <label>
 <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Remember me
 </label>
-<p>By creating an account you agree to our <a href="#" style="color:dodgerblue">Terms & Privacy</a>.</p>
+<p>By creating an account you agree to terms on the Breakdown Page.</p>
 <div class="clearfix">
   <button type="button" class="cancelbtn"><a href ="homepage.html">Cancel</a></button>
   <button type="submit" class="signupbtn">Sign Up</button>

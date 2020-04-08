@@ -12,5 +12,4 @@ export default () => `<form action="/action_page.php" method="post">
         <div class="container">
             <button type="button" class="cancelbtn"><a href="homepage.html">Cancel</button></a>
             <span class="psw"><a href="#">Forgot password?</a></span>
-        <img src="https://github.com/tigerlily187/CapstoneWork/blob/master/library/buygunmeme.png?raw=true></div>
-    </form>`;
+        </form>`;

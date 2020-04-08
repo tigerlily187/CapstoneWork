@@ -11,4 +11,5 @@ export default () => `<h2><center>Please feel free to reach out with any questio
                 <h4>info@allinone.com</h4><br>
             <h3>Address & Phone Number</h3><br>
             <h4>555 W Hollywood Dr<br>Granite City, SD 54857<br>555-667-1234</h4><br>
-    </div>`;
+            
+    </div><center><h3>Don't forget Social Media across all platforms @faciet</h3></center>`;
