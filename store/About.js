@@ -1,4 +1,4 @@
 export default {
-  header: "About Us",
-  page: "About"
+    header: "About Us",
+    page: "About"
 };

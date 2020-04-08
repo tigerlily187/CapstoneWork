@@ -1,4 +1,4 @@
 export default {
-  header: "Welcome Back",
-  page: "Enter"
+    header: "Welcome Back",
+    page: "Enter"
 };

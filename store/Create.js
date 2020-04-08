@@ -1,4 +1,4 @@
 export default {
-  header: "Welcome to the Family",
-  page: "Create"
+    header: "Welcome to the Family",
+    page: "Create"
 };

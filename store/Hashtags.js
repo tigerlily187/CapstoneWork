@@ -1,4 +1,4 @@
 export default {
-  header: "Hashtags",
-  page: "Hashtags"
+    header: "Hashtags",
+    page: "Hashtags"
 };
