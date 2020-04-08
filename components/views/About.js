@@ -7,4 +7,4 @@ export default () =>
             Just abide by the rules set and your transaction should be simple and stress-free.</p>
         </div>
 </div>
-<center><img src="https://github.com/tigerlily187/CapstoneWork/blob/master/library/2ndAmendment.jpg?raw=true"></center>`
+<img src="https://github.com/tigerlily187/CapstoneWork/blob/master/library/2ndAmendment.jpg?raw=true">`
