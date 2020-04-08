@@ -1,5 +1,5 @@
-import * as state from "./store";
 import { Header, Main, Nav } from "./components";
+import * as state from "./store";
 import Navigo from "navigo";
 import { capitalize } from "lodash";
 const router = new Navigo(window.location.origin);
