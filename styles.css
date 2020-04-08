@@ -71,9 +71,15 @@ table, th, td {
     justify-content: space-between;
     align-self: center;
 }
-.contact div{
-    justify-self: center;
+.alternate {
+    border: none;
+    padding: .5em;
+    margin: 0px;
+    width: 1000px;
+    height: 75px;
+    justify-content: center;
 }
+
 .picture{
     display: flex;
     justify-content: center;

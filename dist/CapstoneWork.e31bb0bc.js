@@ -152,7 +152,7 @@ Object.defineProperty(exports, "__esModule", {
 exports.default = void 0;
 
 var _default = function _default() {
-  return "<div class=\"Membership\">\n      <button><center><a href =\"/Enter\" data-navigo>Sign In</a></button><button><center><a href =\"/Create\" data-navigo>Create Your Account</a></button>\n  </div>\n      <center><img src=\"https://github.com/tigerlily187/CapstoneWork/blob/master/components/logo.png?raw=true\"></center>";
+  return "<div class=\"Membership\">\n      <button><center><a href =\"/Enter\" data-navigo>Sign In</a></button><button><center><a href =\"/Create\" data-navigo>Create Your Account</a></button>\n  </div>\n      <center><img src=\"https://github.com/tigerlily187/CapstoneWork/blob/master/library/logo.png?raw=true\"></center>";
 };
 
 exports.default = _default;
@@ -191,7 +191,7 @@ Object.defineProperty(exports, "__esModule", {
 exports.default = void 0;
 
 var _default = function _default() {
-  return "<h2><center>Please feel free to reach out with any questions and/or concerns through the following formats</center></h2>\n    <div class=\"contact\">\n        <div><h3>Fill out and submit this form</h3><br>\n            <form action=\"https://formspree.io/mdodqbdd\" method=\"POST\">\n                <label>Name:<input type=\"text\" name=\"_replyto\"></label><br>\n                <label>Email:<input type=\"text\" name=\"_replyto\"></label><br>\n                <label>Message:<textarea name=\"message\"></textarea></label><br>\n                <button type=\"submit\">Send</button>\n                </form><br></div>\n        <div><h3>EMAIL:</h3><br>\n            <h4>info@allinone.com</h4><br></div>\n        <div><h3>Address & Phone Number</h3><br>\n            <h4>555 W Hollywood Dr<br>Granite City, SD 54857<br>555-667-1234</h4><br></div>\n        <div><h3>Social Media</h3><br></div>\n    </div>";
+  return "<h2><center>Please feel free to reach out with any questions and/or concerns through the following formats</center></h2>\n    <div class=\"contact\">\n        <div class=\"alternate\">\n            <div><h3>Fill out and submit this form</h3><br>\n            <form action=\"https://formspree.io/mdodqbdd\" method=\"POST\">\n                <label>Name:<input type=\"text\" name=\"_replyto\"></label><br>\n                <label>Email:<input type=\"text\" name=\"_replyto\"></label><br>\n                <label>Message:<textarea name=\"message\"></textarea></label><br>\n                <button type=\"submit\">Send</button>\n                </form><br></div>\n        <div><h3>EMAIL:</h3><br>\n            <h4>info@allinone.com</h4><br></div></div>\n        <div><h3>Address & Phone Number</h3><br>\n            <h4>555 W Hollywood Dr<br>Granite City, SD 54857<br>555-667-1234</h4><br></div>\n        <div><h3>Social Media</h3><br></div>\n    </div>";
 };
 
 exports.default = _default;
@@ -230,7 +230,7 @@ Object.defineProperty(exports, "__esModule", {
 exports.default = void 0;
 
 var _default = function _default() {
-  return "<div class=\"picture\"><img src=\"https://github.com/tigerlily187/CapstoneWork/blob/master/components/Sample.jpg?raw=true\"></div>";
+  return "<div class=\"picture\"><img src=\"https://github.com/tigerlily187/CapstoneWork/blob/master/library/Sample.jpg?raw=true\"></div>";
 };
 
 exports.default = _default;
@@ -19819,7 +19819,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "58643" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "60311" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
