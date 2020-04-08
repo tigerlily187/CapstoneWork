@@ -4,7 +4,7 @@ export default () =>
         <p>Those of us in the gun and knife industry, whether consumer or vendor, know that it is getting pretty ridiculus to view product and sell/buy what we want.
             With all the red tape that the gun and knife industry has had to go through, there isn't a stress-free platform for products to be reviewed and purchased. 
             This is where we come in....with a touch of all the social media platforms combined you can come in, take a look around, look a reviews and even purchase items you want.
-            Just abide by the rules set and your transaction should be simple and stress-free.</p>
-        </div>
+            Just abide by the rules set and your transaction should be simple and stress-free.</p>     
+    </div>
 </div>
-<img src="https://github.com/tigerlily187/CapstoneWork/blob/master/library/2ndAmendment.jpg?raw=true">`
+<div class="ammend"><center><img src="https://github.com/tigerlily187/CapstoneWork/blob/master/library/2ndAmendment.jpg?raw=true"></center></div>`

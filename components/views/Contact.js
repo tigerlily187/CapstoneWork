@@ -15,5 +15,4 @@ export default () => `<h2><center>Please feel free to reach out with any questio
         </div>
         <div><h3>Address & Phone Number</h3><br>
             <h4>555 W Hollywood Dr<br>Granite City, SD 54857<br>555-667-1234</h4><br></div>
-        <div><h3>Social Media</h3><br></div>
     </div>`;
